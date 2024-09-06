@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troca de Números na Lista</title>
+    <link rel="stylesheet" href="../static/css/syle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <h1>Troca de Números na Lista</h1>
+
+            <p style="color: red;">{{ error }}</p>
+
+            <p style="color: green;">{{ sucesso }}</p>
+
+        <form method="POST">
+            <label for="lista">Digite uma lista de 5 números separados por espaço:</label><br>
+            <input type="text" id="lista" name="lista" required><br><br>
+
+            <label for="primeiro_num">Digite o primeiro número para trocar:</label><br>
+            <input type="number" id="primeiro_num" name="primeiro_num" required><br><br>
+
+            <label for="segundo_num">Digite o segundo número para trocar:</label><br>
+            <input type="number" id="segundo_num" name="segundo_num" required><br><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+            <h2>Lista Atualizada</h2>
+            <p class="lista">{{ lista }}</p>
+    </div>        
+</body>
+</html>
